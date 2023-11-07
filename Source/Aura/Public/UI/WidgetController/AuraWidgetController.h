@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AbilitySystemComponent.h"
 #include "UObject/NoExportTypes.h"
 #include "AuraWidgetController.generated.h"
 
@@ -40,6 +41,10 @@ class AURA_API UAuraWidgetController : public UObject
 	GENERATED_BODY()
 
 public:
+
+	virtual void BroadcastInitialValues();
+	virtual void BindCallbacksToDependencies();
+
 
 	UFUNCTION(BlueprintCallable)
 	void SetWidgetControllerParams(const FWidgetControllerParams& WCParams);

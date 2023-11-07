@@ -3,6 +3,15 @@
 
 #include "UI/WidgetController/AuraWidgetController.h"
 
+void UAuraWidgetController::BroadcastInitialValues()
+{
+
+}
+
+void UAuraWidgetController::BindCallbacksToDependencies()
+{
+}
+
 void UAuraWidgetController::SetWidgetControllerParams(const FWidgetControllerParams& WCParams)
 {
 	PlayerController = WCParams.PlayerController;
