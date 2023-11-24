@@ -81,6 +81,9 @@ protected:
 
 	TMap<FActiveGameplayEffectHandle, UAbilitySystemComponent*> ActiveEffectHandles;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appplied Effect")
+	float ActorLevel = 1.0f;
+
 public:	
 	// Called every frame
 	//virtual void Tick(float DeltaTime) override;
