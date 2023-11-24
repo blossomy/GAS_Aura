@@ -34,6 +34,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appplied Effect")
 	TSubclassOf<UGameplayEffect> InstantGameplayEffectClass;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Appplied Effect")
+	TSubclassOf<UGameplayEffect> DurationGameplayEffectClass;
+
 public:	
 	// Called every frame
 	//virtual void Tick(float DeltaTime) override;
